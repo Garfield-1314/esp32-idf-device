@@ -1,3 +1,13 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// 5x7 ASCII字模库声明
+extern const unsigned char ASCII_5x7[96][7];
+
+#ifdef __cplusplus
+}
+#endif
 #ifndef LCD_H
 #define LCD_H
 
@@ -26,8 +36,8 @@ void lcd_draw_char(int x, int y, char c, uint16_t color);
 void lcd_draw_string(int x, int y, const char *str, uint16_t color);
 void lcd_draw_int32(int x, int y, long int value, uint16_t color);
 void lcd_draw_image(int x, int y, int width, int height, const uint16_t *image);
-void lcd_clear_buffer(uint16_t color);
+void lcd_clear_buffer(int x, int y, int width, int height, uint16_t color);
 
-extern const uint16_t font16x16_ascii[36][16];
+// extern const uint16_t font16x16_ascii[36][16];
 
 #endif // LCD_H

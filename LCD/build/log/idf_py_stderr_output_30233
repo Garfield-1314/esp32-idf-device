@@ -1,0 +1,21 @@
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c: In function 'lcd_draw_string':
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c:49:15: error: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   49 |     int len = strlen(str);
+      |               ^~~~~~
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c:12:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   11 | #include "LCD.h"
+  +++ |+#include <string.h>
+   12 | 
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c:49:15: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   49 |     int len = strlen(str);
+      |               ^~~~~~
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c:49:15: note: include '<string.h>' or provide a declaration of 'strlen'
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c: In function 'lcd_draw_string2':
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c:66:15: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   66 |     int len = strlen(str);
+      |               ^~~~~~
+/home/garfield/github/esp32-idf-device/LCD/main/LCD.c:66:15: note: include '<string.h>' or provide a declaration of 'strlen'
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:90: esp-idf/main/CMakeFiles/__idf_main.dir/LCD.c.obj] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:5807: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

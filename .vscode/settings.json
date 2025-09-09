@@ -1,0 +1,10 @@
+{
+    "cmake.ignoreCMakeListsMissing": true,
+    "files.associations": {
+        "stdio.h": "c",
+        "user_lvgl.h": "c",
+        "lv_conf.h": "c",
+        "lv_font.h": "c",
+        "lvgl.h": "c"
+    }
+}
