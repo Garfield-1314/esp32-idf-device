@@ -1,8 +1,0 @@
-/home/garfield/github/esp32-idf-device/LVGL/main/User_LVGL.c: In function 'update_label_cb':
-/home/garfield/github/esp32-idf-device/LVGL/main/User_LVGL.c:74:23: error: 'label' undeclared (first use in this function)
-   74 |     lv_label_set_text(label, buf);
-      |                       ^~~~~
-/home/garfield/github/esp32-idf-device/LVGL/main/User_LVGL.c:74:23: note: each undeclared identifier is reported only once for each function it appears in
-make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:104: esp-idf/main/CMakeFiles/__idf_main.dir/User_LVGL.c.obj] Error 1
-make[1]: *** [CMakeFiles/Makefile2:5854: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
-make: *** [Makefile:136: all] Error 2

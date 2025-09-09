@@ -1,2 +1,0 @@
-source /home/garfield/github/esp32-idf-device/LCD/build/gdbinit/symbols
-source /home/garfield/github/esp32-idf-device/LCD/build/gdbinit/connect
