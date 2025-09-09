@@ -87,7 +87,7 @@ void lcd_draw_int32(int x, int y, long int value, uint16_t color) {
 // 显示一张图片到指定位置
 // image: 图像数据（RGB565），width/height: 图像宽高
 void lcd_draw_image(int x, int y, int width, int height, const uint16_t *image) {
-    lcd_clear_buffer(x,y,width,height,0x0000);
+    // lcd_clear_buffer(x,y,width,height,0x0000);
     for (int row = 0; row < height; row++) {
         for (int col = 0; col < width; col++) {
             int px = x + col;
